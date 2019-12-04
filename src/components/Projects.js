@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import PROJECTS from './data/projects';
+import PROJECTS from '../data/projects';
 
 
-class Project extends Component {
+const Project = props => {
 
-    render(){
 
-        const {title,image,description,link} = this.props.project;
+        const {title,image,description,link} = props.project;
 
-        console.log('this.props', this.props);
+    
         return (
             <div style={{ display:'inline-block',width:300,margin:10}} >
                 <h3>{title}</h3>
@@ -17,33 +16,29 @@ class Project extends Component {
                 <a href={link}>{link}</a>
             </div>
         )
-    }
+    
 
 
 }
 
 
-class Projects extends Component {
+const Projects = () => (
 
-    render(){
 
-        return(
             <div>
                 <h2>Individual Projects</h2>
                 <div>
                     {
-                        PROJECTS.map(PROJECT=>{
-                            return (
+                        PROJECTS.map(PROJECT=>(
                                 <Project key = {PROJECT.id} project = {PROJECT} />
                             )
-                        })
+                        )
                     }
                 </div>
             </div>
-        )
+        
 
-    }
-}
+)
 
 
 

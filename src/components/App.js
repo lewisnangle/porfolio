@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './Projects';
 import Title from './Title';
 import SocialProfiles from './SocialProfiles';
-import profileImage from './assets/profile.png';
+import profileImage from '../assets/profile.png';
 
 
 class App extends Component {
