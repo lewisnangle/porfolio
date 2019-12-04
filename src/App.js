@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './Projects';
+import Title from './Title';
 import SocialProfiles from './SocialProfiles';
+import profileImage from './assets/profile.png';
+
 
 class App extends Component {
 
@@ -15,9 +19,13 @@ class App extends Component {
 
 
         return (
+            
+            
             <div>
+                <img src = {profileImage} alt = 'profile' className="profileImage" />
                 <h1>Hello!</h1>
-                <p>My name is Lewis. I'm a Software Engineer.</p>
+                <p>My name is Lewis. </p>
+                <Title />
             {
             this.state.displayBio ? (                
                 <div>
