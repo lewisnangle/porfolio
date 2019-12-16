@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 
 
 const TITLES = [
-    'A Software Developer',
-    'A music Lover',
-    'An adventure seeker',
+    '....',
+    'dsdsd',
+    'fsdf ds ',
 ]
 
 

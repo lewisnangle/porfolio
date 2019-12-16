@@ -26,7 +26,7 @@ const Projects = () => (
 
 
             <div>
-                <h2>Individual Projects</h2>
+                <h2>Projects</h2>
                 <div>
                     {
                         PROJECTS.map(PROJECT=>(

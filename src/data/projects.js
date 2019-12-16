@@ -1,4 +1,7 @@
-import project1 from '../assets/project1.png';
+
+/*
+
+import project1 from '../assets/princesTrust.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 
@@ -6,7 +9,7 @@ const PROJECTS = [
     {   
         id:1,
         title: 'Project 1..',
-        description: 'A React App That I Built, Involving JS and core web dev concepts!',
+        description: 'A Group Project',
         link:'..',
         image: project1
     },
@@ -28,3 +31,5 @@ const PROJECTS = [
 
 
 export default PROJECTS;
+
+*/

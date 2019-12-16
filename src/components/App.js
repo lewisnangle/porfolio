@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Projects from './Projects';
 import Title from './Title';
 import SocialProfiles from './SocialProfiles';
-import profileImage from '../assets/profile.png';
+
+
+
+
 
 
 class App extends Component {
@@ -22,34 +24,42 @@ class App extends Component {
             
             
             <div>
-                <img src = {profileImage} alt = 'profile' className="profileImage" />
-                <h1>Hello!</h1>
-                <p>My name is Lewis. </p>
-                <Title />
+
+            <div style={{float:'right'}}>
+
+            <SocialProfiles />
+
+            </div>
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '70vh'}}>
+                <h5>My name is Lewis. </h5>
+             </div>
+             <hr/>
+             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
             {
+
             this.state.displayBio ? (                
                 <div>
-                    <p>Currently living in Belfast</p>
-                    <p>.. .. .. ..</p>
-                    <p>.. .. .. ..</p>
-                    <p>.. .. .. ..</p>
-                    <p>.. .. .. ..</p>
-                    <button onClick={this.toggleDisplayBio}>Read Less</button>
+                    <p>I'm a Software Developer living in Belfast.</p>
+                    <p>Check out my Github to see what i've been working on!</p>
+
+
+    
+                    <button  onClick={this.toggleDisplayBio}>Close</button>
                 </div>
                 ) : <div>
-                    <button onClick={this.toggleDisplayBio}> Read more</button>
+                    <button  onClick={this.toggleDisplayBio}> About Me</button>
+                    
                 </div>
-        }
-
-        <hr/>
-
-        <Projects />
-
-        <hr/>
-
-        <SocialProfiles />
-        
+                
+            }
             </div>
+
+        <hr/>
+
+
+
+
+        </div>
         )
 
 
@@ -57,6 +67,7 @@ class App extends Component {
     }
 
 }
+
 
 
 export default App;

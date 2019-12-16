@@ -10,7 +10,7 @@ const SocialProfile = props => {
     return (
         <span >
         <a href={link}>
-            <img src={image} alt = 'social-profile' style = {{width:35, height:35,margin:5}}></img>
+            <img src={image} alt = 'social-profile' style = {{width:35, height:35,margin:10}}></img>
         </a>
             </span>
     )
@@ -21,7 +21,6 @@ const SocialProfile = props => {
 
 const SocialProfiles = () => (
         <div>
-        <h2>Social Media Profiles</h2>
         <div>
             {
                 SOCIAL_PROFILES.map(SOCIAL_PROFILE=>{
