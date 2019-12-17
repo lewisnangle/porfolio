@@ -7,7 +7,7 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 const SOCIAL_PROFILES = [
     {
         id: 1,
-        link:'lewisnangle1@gmail.com',
+        link:"mailto:lewisnangle1@gmail.com",
         image:emailIcon
     },
     {
